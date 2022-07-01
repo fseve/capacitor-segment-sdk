@@ -1,0 +1,95 @@
+{
+  "api": {
+    "name": "CapacitorSegmentPlugin",
+    "slug": "capacitorsegmentplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "initialize",
+        "signature": "(options: InitializeOptions) => any",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ key: string; trackLifecycle?: boolean | undefined; recordScreenViews?: boolean | undefined; proxyHost?: string | undefined; }"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "InitializeOptions"
+        ],
+        "slug": "initialize"
+      },
+      {
+        "name": "identify",
+        "signature": "(options: IdentifyOptions) => any",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "Identity & { traits?: any; options?: any; }"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "IdentifyOptions"
+        ],
+        "slug": "identify"
+      },
+      {
+        "name": "track",
+        "signature": "(options: TrackOptions) => any",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ eventName: string; properties: any; }"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "TrackOptions"
+        ],
+        "slug": "track"
+      },
+      {
+        "name": "page",
+        "signature": "(options: PageOptions) => any",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ pathname: string; }"
+          }
+        ],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "PageOptions"
+        ],
+        "slug": "page"
+      },
+      {
+        "name": "reset",
+        "signature": "() => any",
+        "parameters": [],
+        "returns": "any",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "reset"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": []
+}
