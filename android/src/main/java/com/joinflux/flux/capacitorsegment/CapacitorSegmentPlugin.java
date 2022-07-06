@@ -42,7 +42,7 @@ public class CapacitorSegmentPlugin extends Plugin {
         String proxyHost = call.getString("proxyHost");
 
         if (proxyHost == null) {
-            builder = new Analytics.Builder(context, key);
+            builder = new Analytics.Builder(context, key).experimentalUseNewLifecycleMethods(false);
         } else {
             builder = new Analytics.Builder(context, key).connectionFactory(new ConnectionFactory() {
                 @Override
@@ -50,7 +50,7 @@ public class CapacitorSegmentPlugin extends Plugin {
                     String path = Uri.parse(url).getPath();
                     return super.openConnection(proxyHost + path);
                 }
-            });
+            }).experimentalUseNewLifecycleMethods(false);
         }
 
         Boolean trackLifecycle = call.getBoolean("trackLifecycle", false);
