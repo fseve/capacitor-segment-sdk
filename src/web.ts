@@ -61,6 +61,7 @@ implements CapacitorSegmentPlugin {
         file.onerror = console.error;
         file.appendChild(node)
         document.head.appendChild(file);
+        resolve(null);
       }
     });
   }

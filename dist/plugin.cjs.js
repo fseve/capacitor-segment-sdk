@@ -61,6 +61,7 @@ class CapacitorSegmentWeb extends core.WebPlugin {
                 file.onerror = console.error;
                 file.appendChild(node);
                 document.head.appendChild(file);
+                resolve(null);
             }
         });
     }
