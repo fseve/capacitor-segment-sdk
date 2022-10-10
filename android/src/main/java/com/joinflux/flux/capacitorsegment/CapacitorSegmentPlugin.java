@@ -8,7 +8,6 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 
 import android.content.Context;
 import android.net.Uri;
-import android.util.Log;
 import com.segment.analytics.Analytics;
 import com.segment.analytics.Analytics.Builder;
 import com.segment.analytics.ConnectionFactory;

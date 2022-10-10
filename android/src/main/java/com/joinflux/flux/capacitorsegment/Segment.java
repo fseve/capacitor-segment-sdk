@@ -7,7 +7,6 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 
 import android.content.Context;
-import android.util.Log;
 import com.segment.analytics.Analytics;
 import com.segment.analytics.Analytics.Builder;
 import com.segment.analytics.Options;
@@ -53,7 +52,6 @@ public class Segment {
                 Object value = obj.get(key);
                 map.put(key, value);
             } catch (JSONException e) {
-                Log.d(PLUGIN_TAG, "could not get value for key " + key);
             }
         }
         return map;
@@ -80,7 +78,6 @@ public class Segment {
                 boolean enabled = obj.getBool(key);
                 options.setIntegration(key, enabled);
             } catch (Exception e) {
-                Log.d(PLUGIN_TAG, "could not get boolean for key " + key);
             }
         }
         return options;
